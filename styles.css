@@ -1,0 +1,248 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+}
+
+body {
+    padding-top: 100px;
+    margin: 0;
+}
+
+.top_left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact_icons_container {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.contact_icons_container a {
+    margin-right: 15px;
+}
+
+.contact_icons_container a:visited {
+    color: inherit
+}
+
+.top_middle {
+    display: flex;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+}
+
+h1 {
+    /* color: white; */
+    white-space: nowrap;
+    position: relative;
+    bottom: 8px;
+}
+
+.top_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.follow_icons_container {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+.follow_icons_container a:visited {
+    color: inherit;
+}
+
+.follow_icons_container a {
+    margin-left: 15px;
+}
+
+i {
+    font-size: 40px;
+}
+
+.contact_icons_container a,
+.follow_icons_container a {
+    transition: color 0.5s;
+    color: black;
+}
+
+.contact_icons_container a:hover,
+.follow_icons_container a:hover {
+    color: white;
+}
+
+.nav_bar {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.nav_bar a {
+    transition: color 0.5s;
+    color: white;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    color: pink;
+}
+
+/* .nav_bar a:visited {
+    color: inherit;
+} */
+
+.nav_brands {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid white;
+    border-right: 1px solid white
+}
+
+#languageButton {
+    border: none;
+    background-color: white;
+    transition: color 0.5s;
+    color: black
+}
+
+#languageButton:hover {
+    color: pink;
+}
+
+.about_me {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_me_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.about_me_content {
+    text-align: center;
+}
+
+.about_me_content p {
+    transition: opacity 2s ease-in-out;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.merchandise {
+    background-color: white;
+}
+
+.merchandise div {
+    height: 400px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border-top: 1px solid black; */
+    border-bottom: 5px solid black;
+}
+
+.browse-box {
+
+}
+
+.browse-box p {
+    height: auto;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    /* border-bottom: 0px; */
+    padding: 10px;
+    text-align: center;
+    transition: backgroundcolor 0.5s;
+    position: relative;
+    top: 360px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.browse-box p:hover {
+    background-color:pink;
+    color: white;
+}
+
+.browse-box a {
+    text-decoration: none;
+}
+
+
+#brand_chanel {
+    background-image: url('pics/logos/logo_chanel.jpg');
+    border-top: 5px solid black;
+}
+
+#brand_hermes {
+    background-image: url('pics/logos/logo_hermes.jpg');
+}
+
+#brand_louis {
+    background-image: url('pics/logos/logo_louis.jpg');
+}
+
+#brand_others {
+    background-image: url('pics/logos/logo_others.jpg');
+}
+
+footer {
+    background-color: pink;
+    padding: 10px;
+    height: 100px;
+    /* font-weight: bold; */
+}
+
+.outside_links_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.outside_links_container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.outside_links_container a:hover {
+    color: white;
+}
